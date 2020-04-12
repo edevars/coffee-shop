@@ -17,6 +17,12 @@ const Image = styled.div`
   left: 0;
   bottom: 0;
   z-index: 0;
+  @media screen and (max-width: 720px) {
+    height: inherit;
+    .gatsby-image-wrapper {
+      height: inherit;
+    }
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -52,7 +58,11 @@ const Home = () => {
           <CoverImage />
         </Image>
         <TitleWrapper>
-          <Title>KAFEKALI<br/>AXKAN</Title>
+          <Title>
+            KAFEKALI
+            <br />
+            AXKAN
+          </Title>
         </TitleWrapper>
       </Wrapper>
     </Layout>
