@@ -8,9 +8,9 @@ const StyledHeader = styled.header`
   align-items: center;
   height: 100vh;
   @media screen and (max-width: 720px) {
-    height: inherit;
+    height: 200px;
     .gatsby-image-wrapper {
-      height: inherit;
+      height: 100%;
     }
   }
 `;
@@ -19,6 +19,9 @@ const Image = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
+  @media screen and (max-width: 720px) {
+    height: 200px;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -34,6 +37,9 @@ const TitleWrapper = styled.div`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  @media screen and (max-width: 720px) {
+    margin-top: 60px;
+  }
 `;
 
 const Title = styled.h1`

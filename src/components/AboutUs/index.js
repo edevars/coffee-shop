@@ -6,6 +6,7 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  grid-area: Pic;
 
   .image {
     width: 400px;
@@ -14,17 +15,24 @@ const ImageWrapper = styled.div`
       border-radius: 50%;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .image {
+      width: 280px;
+    }
+  }
 `;
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Pic Title" "Pic Description";
   width: 80%;
   margin: 0 auto;
 
   .text-wrapper {
     h2 {
       display: inline-block;
+      grid-area: Title;
       font-size: 75px;
       color: #83543e;
       margin-bottom: 20px;
@@ -32,8 +40,23 @@ const Section = styled.section`
       padding-bottom: 20px;
     }
     p {
+      grid-area: Description;
       font-size: 21px;
       max-width: 600px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    grid-template-areas: "Title" "Pic" " Description";
+    margin-left: 10px;
+    .text-wrapper {
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 21px;
+      }
     }
   }
 `;
