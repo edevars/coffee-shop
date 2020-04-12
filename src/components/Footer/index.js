@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { FaMapMarkerAlt } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
   margin-top: 120px;
