@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Nav = styled.nav`
-  font-family: Arial, Helvetica, sans-serif;
   background: brown;
   height: 50px;
   color: white;
@@ -11,6 +10,10 @@ const Nav = styled.nav`
   align-items: center;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  opacity: 0.3;
 
   ul {
     list-style: none;
