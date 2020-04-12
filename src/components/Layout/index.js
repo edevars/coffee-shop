@@ -1,19 +1,15 @@
 import React from "react";
 import { Menu } from "../Menu";
 import "../../fonts/fonts.css";
-import styled from 'styled-components';
-
-const Wrapper = styled.div`
-    
-`;
-
-
+import styled from "styled-components";
+import Footer from "../Footer";
 
 export const Layout = ({ children }) => {
   return (
-    <Wrapper>
+    <>
       <Menu />
       {children}
-    </Wrapper>
+      <Footer />
+    </>
   );
 };
